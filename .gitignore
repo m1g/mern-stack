@@ -1,0 +1,5 @@
+# Ignore These Files and Folders
+keys.js
+
+# dependencies
+/node_modules
