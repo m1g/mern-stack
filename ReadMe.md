@@ -4,7 +4,7 @@ A starting point for building MERN projects based on the blog walkthrough by @ri
 
 [Link to article](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669)
 
-## 🛠 Tech Used
+## 🛠 Server Tech Used
 - bcryptjs: used to hash passwords before we store them in our database
 - body-parser: used to parse incoming request bodies in a middleware
 - concurrently: allows us to run our backend and frontend concurrently and on different ports
@@ -16,5 +16,14 @@ A starting point for building MERN projects based on the blog walkthrough by @ri
 - passport-jwt: passport strategy for authenticating with a JSON Web Token (JWT); lets you authenticate endpoints using a JWT
 - validator: used to validate inputs (e.g. check for valid email format, confirming passwords match)
 
+## 🛠 Client Tech Used
+- axios: promise based HTTP client for making requests to our backend
+- classnames: used for conditional classes in our JSX
+- jwt-decode: used to decode our jwt so we can get user data from it
+- react-redux: allows us to use Redux with React
+- react-router-dom: used for routing purposes
+- redux: used to manage state between components (can be used with React or any other view library)
+- redux-thunk: middleware for Redux that allows us to directly access the dispatch method to make asynchronous calls from our actions
+
 ## 🏃🏾‍♂️ Run Server
-`nodemon run server.js`
+`npm run dev`
