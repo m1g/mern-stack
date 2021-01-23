@@ -18,7 +18,7 @@ app.use(
 app.use(bodyParser.json());
 
 // DB Config
-const db = require("./config/keys").mongoURI;
+const db = process.env.MONGO_URI;
 
 // Connect to MongoDB
 mongoose.connect(db, {
@@ -48,6 +48,8 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
+} else {
+  require('dotenv').config();
 }
 
 const port = process.env.PORT || 5000;
