@@ -1,5 +1,5 @@
 # Ignore These Files and Folders
-.env
+keys.js
 
 # dependencies
 /node_modules
