@@ -6,7 +6,6 @@ A starting point for building MERN projects based on the blog walkthrough by @ri
 
 ## 🛠 Server Tech Used
 - bcryptjs: used to hash passwords before we store them in our database
-- body-parser: used to parse incoming request bodies in a middleware
 - concurrently: allows us to run our backend and frontend concurrently and on different ports
 - express: sits on top of Node to make the routing, request handling, and responding easier to write
 - is-empty: global function that will come in handy when we use validator
@@ -25,5 +24,28 @@ A starting point for building MERN projects based on the blog walkthrough by @ri
 - redux: used to manage state between components (can be used with React or any other view library)
 - redux-thunk: middleware for Redux that allows us to directly access the dispatch method to make asynchronous calls from our actions
 
+## 🎢 Setup
+
+### Install all of the dependencies:
+```bash
+npm install
+```
+
+### Add a .env file to the root and include:
+```
+MONGO_URI="YOUR_DB_URI"
+SECRET="YOUR_SECRET"
+```
+
+### Create a `dev.js` file in the config folder and include:
+```javascript
+module.exports = {
+  mongoURI: "YOUR_DB_URI",
+  secretOrKey: "YOUR_SECRET"
+}
+```
+
 ## 🏃🏾‍♂️ Run Server
-`npm run dev`
+```bash
+npm run dev
+```

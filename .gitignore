@@ -1,5 +1,6 @@
 # Ignore These Files and Folders
 dev.js
+.env
 
 # dependencies
 /node_modules
